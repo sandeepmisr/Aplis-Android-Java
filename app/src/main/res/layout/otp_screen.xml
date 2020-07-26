@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/indicator_3"
+        android:padding="@dimen/dp20"
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:src="@drawable/ar"
+            android:layout_gravity="center"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Verify Your Email"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/white"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"></TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/dp20"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We have send you OTP on your email"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp12"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/buttonlinear"
+
+            >
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/two"
+                android:padding="@dimen/dp10"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true"></ImageView>
+
+            <EditText
+                android:id="@+id/edittext_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/textCol"
+                android:layout_gravity="center"
+                android:hint="OTP"
+                android:textSize="@dimen/dp18"
+                android:layout_toRightOf="@+id/left_image"
+                android:background="@drawable/buttonlinear"
+                android:inputType="number"
+                android:fontFamily="@font/playfairdisplayregular"
+                android:cursorVisible="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="left|center"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="VERIFY"
+    android:textSize="@dimen/dp14"
+    android:fontFamily="@font/playfairdisplaybold"
+    android:background="@color/indicator_3"
+    android:textColor="@color/white"
+    android:layout_marginTop="@dimen/dp30"
+    android:layout_marginLeft="@dimen/dp30"
+    android:layout_marginRight="@dimen/dp30"
+    android:id="@+id/verify"
+    ></Button>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

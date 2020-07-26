@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame">
+
+    <LinearLayout
+        android:id="@+id/top_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--TextView and Button displayed in First Fragment -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading"
+
+            tools:text="heading"
+            android:textSize="@dimen/dp20"
+            android:fontFamily="@font/playfairdisplaybold"
+            android:textColor="@color/textColblack"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subheading"
+            tools:text="subheading"
+            android:textSize="@dimen/dp18"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:textColor="@color/textColblack"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layer"
+        android:layout_above="@+id/longtext"></ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/longtext"
+        android:layout_alignParentBottom="true"></TextView>
+</RelativeLayout>

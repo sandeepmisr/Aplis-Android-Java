@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="4"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/layoutbtm"
+>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layoutbtm"
+    android:padding="@dimen/dp10"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true">
+
+
+     <LinearLayout
+         android:id="@+id/linearsignupscreen"
+         android:layout_width="match_parent"
+         android:padding="@dimen/dp20"
+         android:visibility="gone"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="What's your E-mail?"
+             android:textSize="@dimen/dp20"
+             android:paddingBottom="@dimen/dp10"
+             android:paddingTop="@dimen/dp10"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="12dp"
+             android:hint="Enter email">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:inputType="textEmailAddress"
+                 android:id="@+id/ed_emailsignup"/>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Create a Password"
+             android:textSize="@dimen/dp20"
+             android:paddingBottom="@dimen/dp10"
+             android:paddingTop="@dimen/dp20"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="12dp"
+             android:hint="Enter password"
+             app:passwordToggleEnabled="true">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:id="@+id/ed_passwordsignup"
+                 android:layout_height="wrap_content"
+                 android:inputType="textPassword"/>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="What's your date of birth?"
+             android:textSize="@dimen/dp20"
+             android:paddingBottom="@dimen/dp10"
+             android:paddingTop="@dimen/dp20"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/dp10"
+             android:hint="Enter DOB">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/eddobsignup"
+                 android:inputType="text"/>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <DatePicker
+             android:id="@+id/datePicker1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:layout_gravity="center"
+             android:visibility="gone"
+             android:datePickerMode="spinner"
+             android:calendarViewShown="false"/>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Continue"
+             android:textSize="@dimen/dp20"
+             android:layout_marginTop="@dimen/dp10"
+             android:onClick="text__continueclick"
+             android:id="@+id/text_continue"
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/linearsignupsecondscreen"
+         android:layout_width="match_parent"
+         android:padding="@dimen/dp20"
+         android:visibility="gone"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="What's your Gender?"
+             android:textSize="@dimen/dp20"
+             android:paddingBottom="@dimen/dp10"
+             android:paddingTop="@dimen/dp10"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+
+         <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/gender_list"
+             android:hint="Gender"
+             ></com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="What's your Full Name?"
+             android:textSize="@dimen/dp20"
+             android:paddingBottom="@dimen/dp10"
+             android:paddingTop="@dimen/dp20"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/dp10"
+             android:hint="Enter full name">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:id="@+id/ed_fnamesignup"
+
+                 android:layout_height="wrap_content"
+                 android:inputType="textPersonName"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="What's your Mobile number?"
+             android:textSize="@dimen/dp20"
+             android:paddingBottom="@dimen/dp10"
+             android:paddingTop="@dimen/dp20"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/dp10"
+             android:hint="Enter mobile name">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:id="@+id/ed_mobsignup"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:maxLength="10"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="This appears on your Aplis profile."
+             android:textSize="@dimen/dp10"
+             android:paddingBottom="@dimen/dp10"
+             android:paddingTop="@dimen/dp10"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplaybold"
+             ></TextView>
+
+
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Create Account"
+             android:textSize="@dimen/dp20"
+             android:layout_marginTop="@dimen/dp10"
+             android:onClick="text__createaccoutnclick"
+             android:id="@+id/text_createaccount"
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></Button>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="By Creating an Account, You are agreeing to all our Terms and Conditions."
+             android:textSize="@dimen/dp6"
+             android:layout_marginTop="@dimen/dp10"
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:textColor="@color/textCol"
+             android:fontFamily="@font/playfairdisplayregular"
+             ></TextView>
+
+     </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/linearsigninscreen"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp20"
+         android:visibility="gone"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         android:layout_marginBottom="@dimen/dp20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="@dimen/dp20"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/playfairdisplayregular"
+            ></TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Enter email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/ed_emailsignin"
+                android:importantForAutofill="yes"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="@dimen/dp20"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingTop="@dimen/dp20"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/playfairdisplayregular"
+            ></TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Enter password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/ed_passwordsignin"
+                android:importantForAutofill="yes"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:onClick="textsigninaccount"
+            android:id="@+id/text_signin"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/playfairdisplayregular"
+            ></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trouble logging in?"
+            android:textSize="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp10"
+            android:onClick="troublelogin"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/ColorTextGrey"
+            android:fontFamily="@font/playfairdisplayregular"
+            ></TextView>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp20"
+    android:layout_marginRight="@dimen/dp20"
+    android:id="@+id/defaultlinearbottomscreen"
+    android:visibility="visible"
+    android:onClick="defaultlinearbottomscreenclick"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Aplis"
+        android:textSize="@dimen/dp19"
+        android:id="@+id/test"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplayregular"
+></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Aplis"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp10"
+        android:textColor="@color/ColorTextGrey"
+        android:fontFamily="@font/playfairdisplayregular"
+></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="@dimen/dp18"
+        android:layout_marginTop="@dimen/dp20"
+        android:onClick="text_signupfromdefaultclick"
+        android:id="@+id/text_signupfromdefault"
+
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplayregular"
+        ></TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp10"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an Account"
+        android:textSize="@dimen/dp12"
+        android:onClick="text_signinclick"
+        android:id="@+id/text_signinfromdefault"
+        android:textColor="@color/ColorTextGrey"
+        android:fontFamily="@font/playfairdisplayregular"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="@dimen/dp12"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplayregular"
+        ></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:indeterminate="true"
+        android:layout_marginBottom="@dimen/dp60"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

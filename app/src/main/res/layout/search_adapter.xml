@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adapter"
+    android:layout_gravity="left"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f6f6f6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/eventslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp10"
+
+        android:layout_above="@+id/view"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/dp130"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/image1"
+            tools:src="@drawable/notes"
+            android:transitionName="cover_image"
+           />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/dp130"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/image1_circle"
+            tools:src="@drawable/notes"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:layout_weight="1.3"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/playfairdisplayregular"
+                android:textColor="@color/textColblack"
+                android:textSize="@dimen/dp16"
+                tools:text="Title"
+
+                />
+            <TextView
+                android:id="@+id/text_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="SubTitle"
+                android:textSize="@dimen/dp14"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:fontFamily="@font/playfairdisplayregular"
+                android:textColor="#707070"
+
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center|right"
+            android:src="@mipmap/rightarrow"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:id="@+id/right_image"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp20"
+        android:alpha="0.2"
+        android:background="#707070"
+        android:id="@+id/view"></View>
+
+
+</FrameLayout>

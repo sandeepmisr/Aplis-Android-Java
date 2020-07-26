@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/coordinatorLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:layout_width="@dimen/dp24"
+            android:src="@drawable/ic_arrow_left"
+            android:id="@+id/image_back"
+            android:layout_height="@dimen/dp24"
+            android:layout_gravity="center"
+            android:onClick="imageback"
+            android:layout_alignParentLeft="true"
+            android:tint="@color/textColblack"></ImageView>
+
+        <TextView
+            android:id="@+id/text_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textSize="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp3"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top"
+            android:gravity="left"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:fontFamily="@font/playfairdisplayregular"
+            android:textColor="@color/textColblack"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/dp20"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:textColor="@color/textColblack"
+        >
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:textSize="@dimen/dp20"
+        android:gravity="left"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:textColor="@color/textColblack"
+
+        />
+
+    <TextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="SubTitle"
+        android:textSize="@dimen/dp14"
+        android:layout_marginTop="@dimen/dp10"
+        android:visibility="gone"
+        android:gravity="left"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:textColor="#707070"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="#707070"
+        android:layout_marginTop="@dimen/dp10"
+
+        android:id="@+id/view"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Books"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:layout_marginTop="@dimen/dp20"
+        android:visibility="gone"
+        android:id="@+id/categories"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>

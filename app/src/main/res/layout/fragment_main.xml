@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/dp20">
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+
+                android:onClick="hamburger"
+                android:src="@drawable/menu"
+                android:id="@+id/imageview_hamburger"
+                android:visibility="gone"
+
+                ></ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:onClick="image_search"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/search"
+                android:id="@+id/imageview_search"
+
+
+                ></ImageView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <Button
+        android:id="@+id/button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello_blank_fragment"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbackground"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabSelectedTextColor="@color/textColblack"
+        app:tabIndicatorColor="@color/textColblack"
+        app:tabIndicatorHeight="@dimen/dp20"
+        app:tabPaddingStart="@dimen/dp20"
+        app:tabPaddingEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp20"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        >
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

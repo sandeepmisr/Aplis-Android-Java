@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:paddingTop="@dimen/dp20"
+        android:paddingBottom="@dimen/dp20">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1.6"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/text_cancel"
+                    >
+            <EditText
+                android:id="@+id/edittext_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/textCol"
+                android:layout_gravity="center"
+                android:hint="Books,Authors, Collections and More"
+                android:drawablePadding="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                android:textSize="@dimen/dp14"
+                android:background="@drawable/buttonlinear"
+                android:drawableLeft="@mipmap/search"
+                android:drawableEnd="@mipmap/close"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:fontFamily="@font/raleway_semibold"
+                android:cursorVisible="true"
+                />
+                    <TextView
+                        android:id="@+id/button1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:text=" "
+                        />
+
+                </FrameLayout>
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textSize="@dimen/dp14"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/textColblack"
+                android:gravity="center"
+                android:layout_gravity="center|right"
+                android:fontFamily="@font/raleway_bold"
+                android:padding="@dimen/dp10"
+                android:onClick="text_cancel"
+                ></TextView>
+            </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:id="@+id/layoutnoresult"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:src="@drawable/noresult"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No result found !!"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:gravity="center"
+        android:visibility="visible"
+        android:id="@+id/no_result"
+        />
+
+</LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Results"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:visibility="gone"
+        android:id="@+id/top_result"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="#707070"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/view_ts"
+        android:visibility="gone"
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/ll_scroll_topresults"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:visibility="gone"
+        android:id="@+id/categories"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="#707070"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/view_cat"
+        android:visibility="gone"
+
+        ></View>
+
+    <LinearLayout
+        android:id="@+id/ll_scroll_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Books"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp20"
+        android:visibility="gone"
+        android:id="@+id/books"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="#707070"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/view_book"
+
+        android:visibility="gone"
+
+        ></View>
+
+        <LinearLayout
+            android:id="@+id/ll_scroll_books"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Authors"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:visibility="gone"
+        android:id="@+id/authors"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="#707070"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/view_authors"
+        android:visibility="gone"
+        ></View>
+
+    <LinearLayout
+            android:id="@+id/ll_scroll_authors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collections"
+        android:textSize="@dimen/dp20"
+        android:textColor="@color/textColblack"
+        android:fontFamily="@font/playfairdisplaybold"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:visibility="gone"
+        android:id="@+id/collections"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="#707070"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/view_collection"
+        android:visibility="gone"
+
+        ></View>
+
+        <LinearLayout
+            android:id="@+id/ll_scroll_series"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/dp20"
+        android:visibility="gone"
+        android:id="@+id/text_nopro"
+        android:textColor="@color/textCol"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:layout_centerInParent="true"
+        android:text="No Result Found!!!"
+        />
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

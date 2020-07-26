@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+    android:paddingTop="@dimen/dp10">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="@dimen/dp4"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/card_view">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp400"
+            android:id="@+id/image_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"
+                android:layout_above="@+id/text_layout"
+                android:transitionName="imageMain"
+                android:background="@color/ColorGrey"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:id="@+id/text_layout"
+                android:orientation="vertical"
+                android:padding="@dimen/dp20"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tittle"
+                    android:textSize="@dimen/dp21"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:background="@color/ColorGrey"
+                    android:visibility="visible"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:fontFamily="@font/playfairdisplaybold"
+                    android:textColor="@color/textColblack"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_body"
+                    android:textSize="@dimen/dp14"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@color/ColorGrey"
+                    android:visibility="visible"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/textColblack"
+                    android:fontFamily="@font/playfairdisplayregular"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttonlinear"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp20"
+    android:layout_marginBottom="@dimen/dp10"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/cornor_layout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue Reading"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/dp16"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/playfairdisplayregular"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/resume"></ImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="#707070"
+            android:id="@+id/view"></View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/cornor_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start From Beginning"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/dp16"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/playfairdisplayregular"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/begin"></ImageView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/cornor_layout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmarks"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/dp16"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/playfairdisplayregular"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/bookmarks"></ImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="#707070"></View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/cornor_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/dp16"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/playfairdisplayregular"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/notes"></ImageView>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="#707070"></View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/dp10"
+            android:background="@drawable/cornor_layout"
+            android:id="@+id/add_to_sessions"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Sessions"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/dp16"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/playfairdisplayregular"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/sessions"></ImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="#707070"></View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/cornor_layout"
+            android:id="@+id/add_to_fav"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Favourites"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/dp16"
+                android:textColor="@color/textColblack"
+                android:fontFamily="@font/playfairdisplayregular"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp24"
+                android:id="@+id/img_fav"
+                android:src="@drawable/fav"></ImageView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

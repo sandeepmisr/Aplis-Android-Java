@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Aplis</string>
+    <string name="signuptext">Don\'t have an Account <a href="Signup">SIGNUP</a></string>
+    <string name="book_detail">Bok Detail</string>
+    <string name="red">red</string>
+    <string name="blue">blue</string>
+    <string name="green">green</string>
+    <string name="yellow">yellow</string>
+    <string name="change_pswd"><u>Change password</u></string>
+
+
+    <array name="menuOptions">
+        <item>Tutorials</item>
+        <item>Support</item>
+        <item>Subscription</item>
+        <item>Logout</item>
+    </array>
+
+
+    <string name="body">Android CardView UI component shows information inside cards. This component is generally used to show contact information. This component is available in another support library so we have to add its dependency too.Android CardView widget allows us to control the background color, shadow, corner radius, elevation etc. For using the custom attributes in XML, we need to add the following namespace declaration to the parent layout. Following is the namespace declaration with some attributes from our project.</string>
+    <string name="delete">Delete</string>
+
+    <string name="start_new">New</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="opacity">Opacity</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="sml">Small</string>
+    <string name="med">Medium</string>
+    <string name="lrg">Large</string>
+
+
+</resources>

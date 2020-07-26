@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+ <LinearLayout
+     android:id="@+id/layout_bg"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="horizontal"
+     >
+
+     <LinearLayout
+         android:layout_width="0dp"
+         android:padding="@dimen/dp20"
+         android:id="@+id/leftpielinear"
+         android:orientation="vertical"
+         android:layout_weight="1"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/text_pietitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Ititle"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayblack"
+             android:textSize="@dimen/dp16"
+             android:paddingTop="@dimen/dp10"
+             android:layout_marginTop="@dimen/dp30"></TextView>
+         <TextView
+             android:id="@+id/text_piesubtitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Ititle"
+             android:textColor="@color/textColblack"
+             android:fontFamily="@font/playfairdisplayregular"
+             android:textSize="@dimen/dp16"
+             android:paddingTop="@dimen/dp10"
+        ></TextView>
+         <TextView
+             android:id="@+id/text_piedescription"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Ititle"
+             android:textColor="@color/textCol"
+             android:fontFamily="@font/playfairdisplayregular"
+             android:textSize="@dimen/dp16"
+             android:paddingTop="@dimen/dp10"></TextView>
+
+         <ScrollView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent">
+             <LinearLayout
+                 android:id="@+id/linear_table"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="@dimen/dp10"></LinearLayout>
+         </ScrollView>
+     </LinearLayout>
+
+
+     <RelativeLayout
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="match_parent">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/mchart"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/dp20"
+
+            />
+
+         <com.edu.fab.FABsMenu
+             android:id="@+id/fabs_menu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="15dp"
+             android:layout_marginBottom="15dp"
+             android:clipChildren="false"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             fab:fab_menuMargins="16dp"
+             fab:fab_moreButtonPlusIcon="@mipmap/more"
+             fab:fab_moreButtonBackgroundColor="#999999"
+             fab:fab_moreButtonRippleColor="#999999"
+             fab:fab_moreButtonSize="normal"
+             fab:fab_expandDirection="up"
+             >
+
+             <!-- This is the item that appears at the top of the menu -->
+             <com.edu.fab.TitleFAB
+                 android:id="@+id/to_remove"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 fab:srcCompat="@mipmap/more"
+                 fab:fabSize="mini"
+                 android:visibility="gone"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="15dp"
+                 android:layout_marginBottom="15dp"
+                 fab:backgroundTint="#999999"
+                 fab:rippleColor="@color/gray"
+                 fab:fab_title="This is a custom title"
+                 fab:fab_title_backgroundColor="#999999"
+                 fab:fab_title_textColor="@android:color/white"/>
+
+
+             <com.edu.fab.TitleFAB
+                 android:id="@+id/diaryfab"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 fab:srcCompat="@mipmap/draw"
+                 fab:fab_title="Draw"
+                 fab:fab_enableTitleClick="true"
+                 fab:backgroundTint="@color/colorAccent"
+                 fab:rippleColor="@color/colorAccent"
+                 fab:fabSize="mini"/>
+
+             <com.edu.fab.TitleFAB
+                 android:id="@+id/noticefab"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 fab:srcCompat="@mipmap/snip"
+                 fab:fab_title="Snip"
+                 fab:fabSize="mini"
+                 fab:backgroundTint="@color/colorAccent"
+                 fab:rippleColor="@color/colorAccent"/>
+
+         </com.edu.fab.FABsMenu>
+
+         <ImageView
+             android:id="@+id/piesideimagecancel"
+             android:layout_width="@dimen/dp40"
+             android:layout_height="@dimen/dp40"
+             android:src="@android:drawable/ic_delete"
+             android:scaleType="centerCrop"
+             android:layout_gravity="right"
+             android:layout_alignParentRight="true"
+             android:visibility="gone"
+             ></ImageView>
+
+
+
+
+             <LinearLayout
+                 android:id="@+id/piesidescrren"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="@dimen/dp30"
+                 android:visibility="gone"
+                 android:background="@drawable/bgfillborder"
+
+                 >
+
+
+
+
+
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+
+                 >
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:id="@+id/piesideimagebar"
+                         android:layout_width="@dimen/dp10"
+                         android:layout_height="@dimen/dp80"
+                         android:layout_weight="0.1"
+                         android:scaleType="centerCrop"
+                         android:layout_gravity="right"
+                         android:layout_alignParentLeft="true"
+                         android:visibility="visible"
+                         ></ImageView>
+                <LinearLayout
+                    android:layout_toRightOf="@+id/piesideimagebar"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                 <TextView
+                     android:id="@+id/text_piesidetitle"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Ititle"
+                     android:textColor="@color/textColblack"
+                     android:fontFamily="@font/playfairdisplayblack"
+                     android:textSize="@dimen/dp16"
+                     android:paddingTop="@dimen/dp10"
+                     android:layout_marginLeft="@dimen/dp10"
+                     ></TextView>
+                 <TextView
+                     android:id="@+id/text_piesidesubtitle"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Ititle"
+                     android:textColor="@color/textColblack"
+                     android:fontFamily="@font/playfairdisplayregular"
+                     android:textSize="@dimen/dp16"
+                     android:paddingTop="@dimen/dp10"
+                     android:layout_marginLeft="@dimen/dp10"
+                     ></TextView>
+
+                 <at.blogc.android.views.ExpandableTextView
+                     android:id="@+id/text_piesidedescription"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/dp10"
+                     android:fontFamily="@font/playfairdisplayregular"
+                     android:paddingTop="@dimen/dp10"
+                     android:maxLines="3"
+                     android:ellipsize="end"
+                     android:text="Ititle"
+                     android:textColor="@color/textCol"
+                     android:textSize="@dimen/dp16"></at.blogc.android.views.ExpandableTextView>
+                </LinearLayout>
+                 </RelativeLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical">
+                 <ImageView
+                     android:id="@+id/piesideimage"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/image_notification"
+                     android:scaleType="centerCrop"
+                     android:visibility="gone"
+                     ></ImageView>
+                 <WebView
+                     android:id="@+id/piesideweb"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/image_notification"
+                     android:scaleType="centerCrop"
+                     android:visibility="gone"
+                     ></WebView>
+
+                     <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                         android:id="@+id/piesidevideoFullScreenPlayer"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="#A6000000"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintHorizontal_bias="1.0"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent"
+                         app:layout_constraintVertical_bias="1.0"
+                         app:player_layout_id="@layout/exo_simple_player_view"
+                         app:controller_layout_id="@layout/custom_controls"
+                         app:repeat_toggle_modes="none"
+                         app:show_timeout="45000"
+                         app:surface_type="texture_view"
+                         app:resize_mode="fill"
+                         android:visibility="gone"
+                         />
+
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+
+             </LinearLayout>
+
+
+     </RelativeLayout>
+
+ </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="@dimen/dp10"
+            android:elevation="10dp"
+            android:layout_alignParentLeft="true"
+
+            app:cardBackgroundColor="@color/textColblack"
+            android:alpha="0.8"
+            >
+
+
+
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:src="@drawable/back"
+                android:onClick="onback"
+                android:padding="@dimen/dp10"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="@dimen/dp10"
+            android:elevation="10dp"
+            android:layout_alignParentRight="true"
+            app:cardBackgroundColor="@color/textColblack"
+            android:alpha="0.8">
+            <ImageView
+                android:id="@+id/layoutitlethumb"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:src="@mipmap/topic"
+                android:onClick="ontopic"
+                android:padding="@dimen/dp10"
+                ></ImageView>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

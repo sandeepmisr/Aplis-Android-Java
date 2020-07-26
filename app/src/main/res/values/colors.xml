@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#010101</color>
+
+
+    <color name="colorTrans">#99000000</color>
+
+    <color name="darkSkyBlue">#4a90e2</color>
+
+    <color name="gray">#eeeeee</color>
+
+
+    <color name="white">#ffffff</color>
+
+    <color name="tabIndicatorColor">#FFFFFF</color>
+    <color name="tabSelectedTextColor">#FFFFFF</color>
+    <color name="TextColor">#000000</color>
+    <color name="colorBackground">#f0f0f0</color>
+    <color name="divider">#f2f2f2</color>
+    <color name="textCol">#9E9E9C</color>
+    <color name="textColdaffodil">#707070</color>
+    <color name="textColblack">#010101</color>
+    <color name="textColblue">#013158</color>
+    <color name="ColorDark">#010101</color>
+    <color name="ColorTextGrey">#828282</color>
+    <color name="ColorGrey">#dddddd</color>
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toast_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp10"
+    android:background="@drawable/layout_bg"
+    android:alpha="0.8"
+    >
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ititle"
+        android:textColor="@color/white"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:textSize="@dimen/dp16"
+        android:padding="@dimen/dp10"></TextView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:background="@color/white"
+        ></View>
+
+    <TextView
+        android:id="@+id/text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ititle"
+        android:textColor="@color/white"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:textSize="@dimen/dp16"
+        android:padding="@dimen/dp10"></TextView>
+
+    <TextView
+        android:id="@+id/text_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ititle"
+        android:textColor="@color/white"
+        android:fontFamily="@font/playfairdisplayregular"
+        android:textSize="@dimen/dp16"
+        android:padding="@dimen/dp10"></TextView>
+
+
+
+
+</LinearLayout>

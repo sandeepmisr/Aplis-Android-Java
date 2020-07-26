@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:text="Second View"
+            android:orientation="vertical"
+            android:id="@+id/mimeview"
+            android:layout_below="@+id/top_layer"
+            android:layout_above="@+id/longtext"
+            android:src="@drawable/notes"
+            />
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Second View"
+            android:id="@+id/webView"
+            android:visibility="gone"
+            />
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/videoFullScreenPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A6000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:player_layout_id="@layout/exo_simple_player_view"
+            app:controller_layout_id="@layout/custom_controls"
+            app:repeat_toggle_modes="none"
+            app:show_timeout="45000"
+            app:surface_type="texture_view"
+            app:resize_mode="fill"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/top_layer"
+            android:layout_width="0dp"
+            android:visibility="visible"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--TextView and Button displayed in First Fragment -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/heading"
+                tools:text="heading"
+                android:textSize="@dimen/dp20"
+                android:padding="@dimen/dp10"
+
+                android:fontFamily="@font/playfairdisplaybold"
+                android:textColor="@color/textColblack"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subheading"
+                tools:text="subheading"
+                android:textSize="@dimen/dp18"
+                android:padding="@dimen/dp10"
+
+                android:fontFamily="@font/playfairdisplayregular"
+                android:textColor="@color/textColblack"/>
+
+            <at.blogc.android.views.ExpandableTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/longtext"
+                tools:text="dummytext"
+                android:textColor="@color/textColblack"
+                android:textSize="@dimen/dp16"
+                android:padding="@dimen/dp10"
+
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/playfairdisplayregular"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

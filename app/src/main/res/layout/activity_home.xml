@@ -1,0 +1,212 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        layout="@layout/app_bar_navigation"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp10"
+                android:gravity="center|left"
+                android:layout_above="@+id/bottom"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Profile"
+                    android:textSize="@dimen/dp35"
+                    android:id="@+id/text_darkmode"
+                    android:fontFamily="@font/platfairmediumheading"
+                    android:textColor="@color/textColblack"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:onClick="profileoption"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Favourites"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:textSize="@dimen/dp35"
+                    android:fontFamily="@font/platfairmediumheading"
+
+                    android:textColor="@color/textColblack"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navtextfav"
+                    android:onClick="favrite"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Subsciption"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:textSize="@dimen/dp30"
+                    android:fontFamily="@font/platfairmediumheading"
+
+                    android:textColor="@color/textColblack"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navtextsubs"
+                    android:onClick="favrite"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:id="@+id/navtextsupport"
+                    android:textSize="@dimen/dp35"
+                    android:fontFamily="@font/platfairmediumheading"
+                    android:textColor="@color/textColblack"
+                    android:text="Support"
+                    android:onClick="support"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="Logout"
+                    android:textSize="@dimen/dp35"
+                    android:fontFamily="@font/platfairmediumheading"
+                    android:textColor="@color/textColblack"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navtextlogout"
+                    android:onClick="logouts"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Terms of Use"
+                    android:textSize="@dimen/dp10"
+                    android:fontFamily="@font/playfairdisplayregular"
+                    android:textColor="@color/textCol"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navtextterms"
+                    android:onClick="terms"
+                    android:padding="@dimen/dp2"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="|"
+                    android:textSize="@dimen/dp10"
+                    android:padding="@dimen/dp2"
+                    android:fontFamily="@font/playfairdisplayregular"
+                    android:textColor="@color/textCol"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Privacy policy"
+                    android:textSize="@dimen/dp10"
+                    android:padding="@dimen/dp2"
+                    android:fontFamily="@font/playfairdisplayregular"
+                    android:textColor="@color/textCol"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navtextprivacy"
+                    android:onClick="privacy"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:id="@+id/bottom"
+                android:orientation="horizontal"
+                android:background="#f1f1f1"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/share"
+                        android:layout_weight="0.5"
+                        android:layout_height="@dimen/dp50" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/text_name"
+                            android:layout_width="wrap_content"
+                            android:text="ANKIT RANA"
+                            android:textColor="@color/textCol"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/text_type"
+
+                            android:layout_width="wrap_content"
+                            android:text="STUDENT"
+                            android:textColor="@color/textCol"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:id="@+id/ic_logout"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/dp50"
+                        android:src="@drawable/sessions"
+                        android:layout_weight="0.5"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
