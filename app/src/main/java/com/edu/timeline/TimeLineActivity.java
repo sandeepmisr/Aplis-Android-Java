@@ -140,7 +140,7 @@ public class TimeLineActivity extends AppCompatActivity implements ResponceQueue
         context = TimeLineActivity.this;
 
         viewpagertopiclayer = findViewById(R.id.viewpagertopiclayer);
-        root = findViewById(R.id.frame_layout);
+//        root = findViewById(R.id.frame_layout);
         heading = findViewById(R.id.heading);
         subheading = findViewById(R.id.subheading);
         longtext = findViewById(R.id.text_subdetail);
@@ -187,7 +187,7 @@ public class TimeLineActivity extends AppCompatActivity implements ResponceQueue
 
                     image_visualaize.setImageResource(R.drawable.visuliaze);
                     viewpagertopiclayer.setVisibility(View.VISIBLE);
-                    root.setVisibility(View.VISIBLE);
+//                    root.setVisibility(View.VISIBLE);
 //                    root.setBackgroundColor(getResources().getColor(R.color.textCol));
 
                 } else {
@@ -198,7 +198,7 @@ public class TimeLineActivity extends AppCompatActivity implements ResponceQueue
                     TransitionManager.beginDelayedTransition(viewpagertopiclayer, transition);
                     image_visualaize.setImageResource(R.drawable.un_eye);
                     viewpagertopiclayer.setVisibility(View.GONE);
-                    root.setVisibility(View.GONE);
+//                    root.setVisibility(View.GONE);
 //                    root.setBackgroundColor(getResources().getColor(R.color.white));
 
                 }

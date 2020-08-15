@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/first_linear"
-        android:background="@color/textCol"
+        android:background="@color/textColblack"
         android:orientation="vertical"
         android:layout_weight="0.4"
         android:animateLayoutChanges="true">

@@ -122,14 +122,10 @@ public class EditorSecondSubActivity extends AppCompatActivity implements Respon
         setContentView(R.layout.activity_secondsubeditor);
         context = EditorSecondSubActivity.this;
 
-
         viewpagertopiclayer = findViewById(R.id.viewpagertopiclayer);
         cardimage_Ar = findViewById(R.id.cardimage_Ar);
         cardimage_visualaize = findViewById(R.id.cardimage_visualaize);
         image_visualaize = findViewById(R.id.image_visualaize);
-
-
-
         text_title = findViewById(R.id.text_title);
         text_subtitle = findViewById(R.id.text_subtitle);
         text_description = findViewById(R.id.text_subdetail);
@@ -217,7 +213,7 @@ public class EditorSecondSubActivity extends AppCompatActivity implements Respon
 
                     image_visualaize.setImageResource(R.drawable.visuliaze);
                     viewpagertopiclayer.setVisibility(View.VISIBLE);
-                    root.setBackgroundColor(getResources().getColor(R.color.textCol));
+//                    root.setBackgroundColor(getResources().getColor(R.color.textCol));
 
 
                 }
@@ -229,7 +225,7 @@ public class EditorSecondSubActivity extends AppCompatActivity implements Respon
                     TransitionManager.beginDelayedTransition(viewpagertopiclayer, transition);
                     image_visualaize.setImageResource(R.drawable.un_eye);
                     viewpagertopiclayer.setVisibility(View.GONE);
-                    root.setBackgroundColor(getResources().getColor(R.color.white));
+//                    root.setBackgroundColor(getResources().getColor(R.color.white));
 
 
                 }
@@ -662,7 +658,7 @@ public class EditorSecondSubActivity extends AppCompatActivity implements Respon
     @Override
     protected void onRestart() {
         super.onRestart();
-        fabMenu.setVisibility(View.VISIBLE);
+//        fabMenu.setVisibility(View.VISIBLE);
         rec_view.setVisibility(View.VISIBLE);
     }
 

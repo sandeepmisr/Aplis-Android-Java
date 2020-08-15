@@ -9,6 +9,8 @@ import com.editorsub_sub_subpojo.EditorSub_Sub_SubFirstRetrofitModel;
 import com.editorsub_sub_subpojo.Editorsub_sub_subFirstDetailsRetrofitModel;
 import com.edu.book.BookFirstRetrofitModel;
 import com.edu.browse.BrowseFirstRetrofitModel;
+import com.edu.browse.BrowseFirstUsingParentvRetrofitModel;
+import com.edu.browse.ParentCategory_FirstRetrofitModel;
 import com.edu.discover.DiscoverRetrofitArrayModel;
 import com.edu.discover.DiscoverRetrofitModel;
 import com.edu.editortemplatetwo.EditorFirstRetrofitModel;
@@ -39,17 +41,23 @@ public interface Api {
     String BASE_URL = "https://samystudios.com/api/";
     @FormUrlEncoded
     @POST("user/sign-in")
-    Call<UserAccount> getLoginResponse(@Field("email") String title, @Field("password") String body);
+    Call<UserAccount> getLoginResponse(@Field("user_name") String title, @Field("password") String body);
 
 
     @GET("user/get-all-discovers")
     Call<DiscoverRetrofitModel> getDiscoverList();
 
-    @GET("user/get-all-books?page=")
-    Call<BrowseFirstRetrofitModel> getBrowseBookList();
+    @GET
+    Call<BrowseFirstRetrofitModel> getBrowseBookList(@Url String url);
+
+    @GET
+    Call<BrowseFirstUsingParentvRetrofitModel> getRecentBrowseBookListByParentCategoryID(@Url String url);
 
     @GET
     Call<BookFirstRetrofitModel> getBookCourseDetails(@Url String url);
+
+    @GET
+    Call<ParentCategory_FirstRetrofitModel> getParentCategory(@Url String url);
 
     @GET
     Call<EditorFirstRetrofitModel> getChapterByBookId(@Url String url);
@@ -87,11 +95,11 @@ public interface Api {
 
     @FormUrlEncoded
     @POST("user/reset-password")
-    Call<EmailResponse> getResetPswd(@Field("email") String email,@Field("verification_code") String verification_code,@Field("password") String password);
+    Call<EmailResponse> getResetPswd(@Field("user_name") String email,@Field("verification_code") String verification_code,@Field("password") String password);
 
     @FormUrlEncoded
     @POST("user/verify-email")
-    Call<EmailResponse> doverifyemail(@Field("email") String email,@Field("verification_code") String verification_code);
+    Call<EmailResponse> doverifyemail(@Field("user_name") String email,@Field("verification_code") String verification_code);
 
     @POST
     Call<FavUnFavResponse> dofavUnfavbook(@Url String url);

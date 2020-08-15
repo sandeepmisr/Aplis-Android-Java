@@ -194,7 +194,7 @@ public class EditorSecondActivity extends AppCompatActivity implements ResponceQ
 
 
 
-        Log.e("TAGEDITOR",book_Id);
+//        Log.e("TAGEDITOR",book_Id);
         getDataFromServer();
 
 //        recyclerView.addOnScrollListener(new VerticalPager.OnScrollListener() {

@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -121,7 +120,7 @@ public class EditorSecondSub_sub_subActivity extends AppCompatActivity implement
     private int prevPos = -1;
 
     LinearLayout viewpagertopiclayer;
-    FrameLayout root;
+    LinearLayout linear_layer;
     CardView cardimage_Ar;
     CardView cardimage_visualaize;
     ImageView image_visualaize;
@@ -150,7 +149,7 @@ public class EditorSecondSub_sub_subActivity extends AppCompatActivity implement
 
 
         viewpagertopiclayer = findViewById(R.id.viewpagertopiclayer);
-        root = findViewById(R.id.frame_layout);
+//        linear_layer = findViewById(R.id.linear_layer);
         cardimage_Ar = findViewById(R.id.cardimage_Ar);
         cardimage_visualaize = findViewById(R.id.cardimage_visualaize);
         image_visualaize = findViewById(R.id.image_visualaize);
@@ -256,8 +255,7 @@ public class EditorSecondSub_sub_subActivity extends AppCompatActivity implement
 
                     image_visualaize.setImageResource(R.drawable.visuliaze);
                     viewpagertopiclayer.setVisibility(View.VISIBLE);
-                    root.setVisibility(View.VISIBLE);
-
+//                    linear_layer.setVisibility(View.VISIBLE);
 
                 }
                 else{
@@ -268,8 +266,7 @@ public class EditorSecondSub_sub_subActivity extends AppCompatActivity implement
                     TransitionManager.beginDelayedTransition(viewpagertopiclayer, transition);
                     image_visualaize.setImageResource(R.drawable.un_eye);
                     viewpagertopiclayer.setVisibility(View.GONE);
-                    root.setVisibility(View.GONE);
-
+//                    linear_layer.setVisibility(View.GONE);
 
                 }
             }

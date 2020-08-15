@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <!-- Adding 15 rows of placeholders -->
         <LinearLayout
@@ -30,10 +31,20 @@
     </com.facebook.shimmer.ShimmerFrameLayout>
 
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        android:id="@+id/recviewparentcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="@dimen/dp6"
-        android:layout_weight="1"
+        android:padding="@dimen/dp20"
         android:id="@+id/rec_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

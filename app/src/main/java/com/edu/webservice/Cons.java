@@ -7,7 +7,11 @@ public  class Cons {
     public static String BASE_URL = "https://samystudios.com/api";
     public static String BASE_URL1 = "http://35.173.187.82/aplis/public/api";
     public static String LOGIN_URL = BASE_URL+"/user/sign-in";
-    public static String BROWSE_URL= BASE_URL+"/user/get-all-books?page=";
+    public static String GETPARENTCATURL = BASE_URL+"/user/get-parent-categories";
+    public static String GETSUBCATUSING_PARENTCATEGORYID = BASE_URL+"/user/get-book-by-category?category_id=";
+//    public static String GETSUBCATUSING_PARENTCATEGORYID = BASE_URL+"/user/get-sub-categories?parent_category_id=";
+    public static String BROWSE_URL= BASE_URL+"/user/get-topics?book_id=";
+//    public static String BROWSE_URL= BASE_URL+"/user/get-book-by-category?category_id=";
     public static String SIGNUP_URL = BASE_URL+"/user/sign-up";
     public static String BOOKRECENT_URL = BASE_URL+"/user/get-last-book";
     public static String BOOKDETAILS_URL = BASE_URL+"/user/book-details?book_id=";

@@ -61,10 +61,8 @@ public class Changepassword_Activity extends AppCompatActivity implements
         ed_npswd = findViewById(R.id.ed_npswd);
         ed_cpswd = findViewById(R.id.ed_cpswd);
         verify = findViewById(R.id.text_reset);
-        cancel_image = findViewById(R.id.cancel_image);
 
         callanalytics();
-        cancel_image.setOnClickListener(this);
         verify.setOnClickListener(this);
 
 
@@ -144,5 +142,9 @@ public class Changepassword_Activity extends AppCompatActivity implements
     private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
+    }
+
+    public void onback(View view) {
+        finish();
     }
 }

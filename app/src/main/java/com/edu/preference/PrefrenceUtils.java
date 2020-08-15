@@ -25,6 +25,7 @@ public class PrefrenceUtils {
     public static final String PREF_DEVIC_TOKEN = "_devc";
     public static final String PREF_REGISTRED= "_registered";
     public static final String PREF_LOGINTYPE= "_logintype";
+    public static final String PREF_SCHOOLTYPE= "school_type";
     public static final String PREF_REGISTREDTOKEN= "_registeredtoken";
     public static final String PREF_USERNAME= "_username";
     public static final String PREF_EMAIL= "_email";

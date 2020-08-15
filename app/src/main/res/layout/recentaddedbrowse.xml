@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp10">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/platfairmediumheading"
+        android:textSize="@dimen/dp16"
+        android:text="Hello"
+        android:id="@+id/text_heading"
+        android:textColor="@color/textColblack"></TextView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        <LinearLayout
+            android:id="@+id/ll_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/image_recent1"
+                    android:layout_width="@dimen/dp180"
+                    android:layout_height="@dimen/dp180"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/platfairmediumheading"
+                    android:textSize="@dimen/dp16"
+                    android:text="Hello"
+                    android:id="@+id/text_recent1"
+                    android:textColor="@color/textColblack"
+                    android:layout_alignEnd="@+id/image_recent1"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/image_recent2"
+                    android:layout_width="@dimen/dp180"
+                    android:layout_height="@dimen/dp180"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/platfairmediumheading"
+                    android:textSize="@dimen/dp16"
+                    android:text="Hello"
+                    android:id="@+id/text_recent2"
+                    android:textColor="@color/textColblack"
+                    android:layout_alignEnd="@+id/image_recent2"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/image_recent3"
+                    android:layout_width="@dimen/dp180"
+                    android:layout_height="@dimen/dp180"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/platfairmediumheading"
+                    android:textSize="@dimen/dp16"
+                    android:text="Hello"
+                    android:id="@+id/text_recent3"
+                    android:textColor="@color/textColblack"
+                    android:layout_alignEnd="@+id/image_recent3"></TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>

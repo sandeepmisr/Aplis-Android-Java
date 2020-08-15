@@ -7,14 +7,25 @@
 
     <LinearLayout
         android:id="@+id/eventslayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginRight="@dimen/dp10"
         >
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/platfairmediumheading"
+            android:textSize="@dimen/dp16"
+            android:text="Hello"
+            android:id="@+id/text_heading"
+            android:textColor="@color/white"
+            ></TextView>
+
+
         <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/dp180"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/dp220"
             app:cardCornerRadius="@dimen/dp10"
             app:cardUseCompatPadding="true"

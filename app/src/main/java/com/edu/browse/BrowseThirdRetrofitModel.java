@@ -14,6 +14,17 @@ public class BrowseThirdRetrofitModel {
     @SerializedName("sub_title")
     private String sub_title;
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    @SerializedName("description")
+    private String description;
+
     public String getId() {
         return id;
     }
@@ -46,6 +57,6 @@ public class BrowseThirdRetrofitModel {
         this.book_cover = book_cover;
     }
 
-    @SerializedName("book_cover")
+    @SerializedName("topic_cover")
     private String book_cover;
 }

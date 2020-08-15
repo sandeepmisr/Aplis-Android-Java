@@ -24,12 +24,10 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.ViewHo
     private ArrayList<DiscoverModel> discoverArrayList;
     ClickAdapter clickAdapter;
 
-
     public DiscoverAdapter(Context context, ArrayList<DiscoverModel> discoverAdapterArrayList,ClickAdapter clickAdapter) {
         this.mcontext = context;
         this.discoverArrayList = discoverAdapterArrayList;
         this.clickAdapter = clickAdapter;
-
     }
 
     @NonNull

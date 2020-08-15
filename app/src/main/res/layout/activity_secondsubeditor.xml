@@ -25,7 +25,7 @@
         <ImageView
             android:layout_width="@dimen/dp30"
             android:layout_height="@dimen/dp30"
-            android:src="@drawable/back"
+            android:src="@drawable/ic_arrow_left"
             android:onClick="onback"
             android:padding="@dimen/dp10"
             ></ImageView>
@@ -52,7 +52,8 @@
         fab:fab_moreButtonBackgroundColor="#999999"
         fab:fab_moreButtonRippleColor="#999999"
         fab:fab_moreButtonSize="normal"
-        fab:fab_expandDirection="up">
+        fab:fab_expandDirection="up"
+        android:visibility="gone">
 
         <!-- This is the item that appears at the top of the menu -->
         <com.edu.fab.TitleFAB
@@ -153,10 +154,11 @@
                 android:layout_marginTop="@dimen/dp3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rec_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
     ></androidx.recyclerview.widget.RecyclerView>
                 <com.facebook.shimmer.ShimmerFrameLayout
                     android:id="@+id/shimmerFrameLayout"

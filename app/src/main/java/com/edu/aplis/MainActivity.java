@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.edu.home.HomeActivity;
+import com.edu.home.HomeActivityNew;
 import com.edu.preference.PrefrenceUtils;
 import com.edu.reset.EmailResponse;
 import com.edu.reset.Otp_Activity;
@@ -103,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements ResponceQueues, V
         verifyOtppage = this;
         if(PrefrenceUtils.readBoolean(context,PrefrenceUtils.PREF_LOGINTYPE,false)==true){
             Log.e("TAG",PrefrenceUtils.PREF_DEVIC_TOKEN);
-            startActivity(new Intent(context, HomeActivity.class));
+            startActivity(new Intent(context, HomeActivityNew.class));
             finish();
         }
         Log.e("TAG",PrefrenceUtils.readString(context,PrefrenceUtils.PREF_DEVIC_TOKEN,""));
@@ -323,7 +324,7 @@ else{
                         PrefrenceUtils.writeString(context, PrefrenceUtils.PREF_GENDER,userAccount.getUser().getGender());
                         PrefrenceUtils.writeString(context, PrefrenceUtils.PREF_DEVIC_TOKEN, userAccount.getUser().getJwtToken());
                         PrefrenceUtils.writeBoolean(context, PrefrenceUtils.PREF_LOGINTYPE, true);
-                        startActivity(new Intent(context, HomeActivity.class));
+                        startActivity(new Intent(context, HomeActivityNew.class));
                     }
                     else if(userAccount.getStatus().equalsIgnoreCase("0")){
                         if (userAccount.getMessage().equals("Your email is not verified")){
@@ -430,7 +431,7 @@ else{
                         PrefrenceUtils.writeString(context, PrefrenceUtils.PREF_DEVIC_TOKEN, userAccount.getUser().getJwtToken());
                         PrefrenceUtils.writeBoolean(context, PrefrenceUtils.PREF_LOGINTYPE, true);
 
-                        startActivity(new Intent(context, HomeActivity.class));
+                        startActivity(new Intent(context, HomeActivityNew.class));
                     }
                     else if(userAccount.getStatus().equalsIgnoreCase("0")){
                         if (userAccount.getMessage().equals("Your email is not verified")){
@@ -518,7 +519,7 @@ else{
                     PrefrenceUtils.writeString(context, PrefrenceUtils.PREF_EMAIL, ed_emailsignin.getText().toString());
                     PrefrenceUtils.writeString(context, PrefrenceUtils.PREF_ID, jsonObject.getJSONObject("user").getString("id"));
                     PrefrenceUtils.writeString(context, PrefrenceUtils.PREF_DEVIC_TOKEN, jsonObject.getJSONObject("user").getString("jwtToken"));
-                    startActivity(new Intent(context, HomeActivity.class));
+                    startActivity(new Intent(context, HomeActivityNew.class));
                 }
                 else{
                     Log.e("RESPONSE",responce);

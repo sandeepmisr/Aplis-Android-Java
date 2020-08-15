@@ -11,7 +11,6 @@ import android.view.animation.Animation;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -127,7 +126,7 @@ public class EditorSecondSub_subActivity extends AppCompatActivity implements Re
     ImageView image_Ar;
 
     LinearLayout viewpagertopiclayer;
-    FrameLayout root;
+    LinearLayout linear_layer;
     LinearLayout leftpanel;
     CardView cardimage_Ar;
     CardView cardimage_visualaize;
@@ -159,6 +158,7 @@ public class EditorSecondSub_subActivity extends AppCompatActivity implements Re
         context = EditorSecondSub_subActivity.this;
 
         viewpagertopiclayer = findViewById(R.id.viewpagertopiclayer);
+//        linear_layer = findViewById(R.id.linear_layer);
         cardimage_Ar = findViewById(R.id.cardimage_Ar);
         cardimage_visualaize = findViewById(R.id.cardimage_visualaize);
         image_visualaize = findViewById(R.id.image_visualaize);
@@ -177,7 +177,6 @@ public class EditorSecondSub_subActivity extends AppCompatActivity implements Re
         fabMenu = findViewById(R.id.fabs_menu);
         layout_bg = findViewById(R.id.layout_bg);
         leftpanel = findViewById(R.id.leftpanel);
-        root = findViewById(R.id.frame_layout);
 
         callanalytics();
 //        fabMenu.setVisibility(View.GONE);
@@ -261,8 +260,7 @@ public class EditorSecondSub_subActivity extends AppCompatActivity implements Re
 
                     image_visualaize.setImageResource(R.drawable.visuliaze);
                     viewpagertopiclayer.setVisibility(View.VISIBLE);
-                    root.setVisibility(View.VISIBLE);
-//                    root.setBackgroundColor(getResources().getColor(R.color.textCol));
+//                    linear_layer.setVisibility(View.VISIBLE);
 
 
                 } else {
@@ -273,8 +271,7 @@ public class EditorSecondSub_subActivity extends AppCompatActivity implements Re
                     TransitionManager.beginDelayedTransition(viewpagertopiclayer, transition);
                     image_visualaize.setImageResource(R.drawable.un_eye);
                     viewpagertopiclayer.setVisibility(View.GONE);
-                    root.setVisibility(View.GONE);
-//                    root.setBackgroundColor(getResources().getColor(R.color.white));
+//                    linear_layer.setVisibility(View.GONE);
 
                 }
             }

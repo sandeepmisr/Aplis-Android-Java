@@ -25,9 +25,9 @@
     <application
         android:name="DemoApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/aplislogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/aplislogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true"
@@ -36,7 +36,7 @@
         android:alwaysDrawnWithCache="true"
         android:requestLegacyExternalStorage="true"
         >
-        <activity android:name=".MainActivity"
+        <activity android:name=".SplashActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
@@ -49,6 +49,12 @@
 <!--        <activity android:name="com.edu.discover.EditorActivity"></activity>-->
 
         <activity android:name="com.edu.account.Signupclass" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.edu.home.HomeActivityNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
         <activity android:name="com.edu.dashboard.DashboardMainActivity" />
         <activity android:name="com.edu.account.Profile" />
         <activity android:name="com.edu.discover.DiscoverDetailActivity"
@@ -127,6 +133,8 @@
         <activity android:name="com.edu.editortemplatetwo.TimeLineNewActivity"
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.edu.browse.BrowseActivitySeeAll" />
+        <activity android:name=".LoginPageActivity" />
 
 
         <receiver

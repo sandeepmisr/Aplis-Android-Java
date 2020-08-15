@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/dp10">
+
+    <LinearLayout
+        android:id="@+id/eventslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp220"
+            app:cardCornerRadius="@dimen/dp10"
+            app:cardUseCompatPadding="true"
+            >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dp160"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+
+                android:scaleType="centerCrop"
+                android:transitionName="cover_image"
+               >
+
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <View
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp6"
+                    android:background="@color/white"
+                    android:layout_gravity="left"
+                    ></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/platfairmediumheading"
+                    android:textSize="@dimen/dp16"
+                    android:text="Hello"
+                    android:id="@+id/text_title"
+                    android:textColor="@color/white"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gillsansmediumsubheading"
+                    android:textSize="@dimen/dp14"
+                    android:id="@+id/text_subtitle"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/dp10"
+                    ></TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="kjk"
+            android:textSize="@dimen/dp20"
+            android:minHeight="@dimen/dp30"
+            android:visibility="gone"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:gravity="center"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/proximanovabold"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</LinearLayout>

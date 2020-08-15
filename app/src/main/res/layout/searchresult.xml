@@ -51,7 +51,6 @@
                         android:layout_gravity="right"
                         android:text=" "
                         />
-
                 </FrameLayout>
             <TextView
                 android:id="@+id/text_cancel"

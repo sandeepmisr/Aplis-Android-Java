@@ -938,12 +938,12 @@ public class DiscoverDetailActivity extends Activity implements View.OnClickList
         try {
 //        "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf"
             Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
-            sceneViewerIntent.setData(Uri.parse(strimage_Ar));
+            sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.1?file="+strimage_Ar));
             sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
             startActivity(sceneViewerIntent);
         }
         catch (Exception e){
-            Toast.makeText(context,"No Apps to perform this action",Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"No Apps to perform this action"+ e+"",Toast.LENGTH_LONG).show();
         }
     }
 

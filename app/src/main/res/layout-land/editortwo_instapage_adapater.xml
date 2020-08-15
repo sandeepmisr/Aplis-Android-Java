@@ -36,7 +36,6 @@
             android:id="@+id/videoFullScreenPlayer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#A6000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -49,7 +48,7 @@
             app:show_timeout="45000"
             app:surface_type="texture_view"
             app:resize_mode="fill"
-            android:visibility="gone"
+            android:visibility="visible"
             />
 
         <LinearLayout
