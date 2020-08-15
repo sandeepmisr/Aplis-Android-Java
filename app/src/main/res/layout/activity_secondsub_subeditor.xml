@@ -292,7 +292,7 @@
                             android:elevation="10dp"
                             app:cardBackgroundColor="@color/textColblack"
                             app:cardCornerRadius="8dp">
-
+<!---->
                             <ImageView
                                 android:id="@+id/image_visualaize"
                                 android:layout_width="match_parent"
