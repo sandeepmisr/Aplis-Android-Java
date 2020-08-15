@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+
+
+    >
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutbtm"
+    android:padding="@dimen/dp20"
+     android:gravity="center"
+>
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dp60"
+         android:scaleType="centerInside"
+         android:src="@mipmap/splash"
+         android:layout_marginBottom="@dimen/dp20"
+
+         />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Login"
+         android:textSize="@dimen/dp16"
+         android:paddingBottom="@dimen/dp3"
+         android:paddingTop="@dimen/dp10"
+         android:textColor="@color/textColblack"
+         android:fontFamily="@font/playfairdisplayblack"
+         ></TextView>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Enter your username and password to Login."
+         android:textSize="@dimen/dp14"
+         android:paddingBottom="@dimen/dp10"
+         android:paddingTop="@dimen/dp10"
+         android:textColor="@color/textColdaffodil"
+         android:fontFamily="@font/playfairdisplayregular"
+         ></TextView>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Username"
+         android:textSize="@dimen/dp14"
+         android:paddingBottom="@dimen/dp10"
+         android:paddingTop="@dimen/dp10"
+         android:textColor="@color/textColblack"
+         android:fontFamily="@font/playfairdisplayregular"
+         ></TextView>
+
+     <EditText
+         android:layout_marginBottom="12dp"
+             android:hint="Enter username"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textEmailAddress"
+             android:id="@+id/ed_emailsignin"
+             android:background="@drawable/loginbg_layout"
+             android:padding="@dimen/dp20"
+             android:textColor="@color/textColblack"
+             android:importantForAutofill="yes"
+             android:fontFamily="@font/gillsanssubheading"></EditText>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Password"
+         android:textSize="@dimen/dp14"
+         android:paddingBottom="@dimen/dp10"
+         android:paddingTop="@dimen/dp10"
+         android:textColor="@color/textColblack"
+         android:fontFamily="@font/playfairdisplayregular"
+         ></TextView>
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_toLeftOf="@+id/text_cancel"
+         >
+
+     <EditText
+         android:background="@drawable/loginbg_layout"
+         android:padding="@dimen/dp20"
+         android:textColor="@color/textColblack"
+         android:layout_marginBottom="12dp"
+         android:hint="Enter password"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textPassword"
+             android:id="@+id/ed_passwordsignin"
+             android:drawableEnd="@drawable/right_arrow"
+            android:drawableTint="@color/textColblack"
+             android:importantForAutofill="yes"
+
+             android:fontFamily="@font/gillsanssubheading"
+             />
+
+
+     <TextView
+         android:id="@+id/button1"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_gravity="right"
+         android:text=" "
+         />
+     </FrameLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Trouble logging in?"
+         android:textSize="@dimen/dp12"
+         android:layout_marginTop="@dimen/dp10"
+         android:onClick="troublelogin"
+         android:gravity="left"
+         android:layout_gravity="center"
+         android:textColor="@color/ColorTextGrey"
+         android:fontFamily="@font/playfairdisplayregular"
+         ></TextView>
+
+
+ </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linearsigninscreen"
+          android:layout_width="match_parent"
+             android:padding="@dimen/dp20"
+             android:visibility="gone"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+             android:layout_marginBottom="@dimen/dp20">
+
+         <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:onClick="textsigninaccount"
+            android:id="@+id/text_signin"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/playfairdisplayregular"
+            ></Button>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:layout_marginBottom="@dimen/dp60"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

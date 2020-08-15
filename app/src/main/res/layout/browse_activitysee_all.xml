@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/tool_layout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp20"
+        >
+        <ImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:onClick="onback"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/ic_arrow_left"
+            android:tint="@color/textColblack"
+            android:layout_centerVertical="true"></ImageView>
+
+
+
+
+        <TextView
+            android:id="@+id/text_tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book topics"
+            android:textSize="@dimen/dp18"
+            android:textColor="@color/textColblack"
+            android:fontFamily="@font/playfairdisplaybold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            ></TextView>
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Adding 15 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/editor_secondactivity_sheemeradapter" />
+
+            <include layout="@layout/editor_secondactivity_sheemeradapter" />
+
+
+
+
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="@dimen/dp20"
+        android:id="@+id/rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
