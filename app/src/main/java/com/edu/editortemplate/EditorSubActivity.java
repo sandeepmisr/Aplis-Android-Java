@@ -61,7 +61,7 @@ public class EditorSubActivity extends AppCompatActivity implements ResponceQueu
 
         book_Id = getIntent().getStringExtra("chapter_id");
 
-        callanalytics();
+       // callanalytics();
         Log.e("TAGEDITOR",book_Id);
         getDataFromServer();
     }
@@ -424,10 +424,10 @@ public class EditorSubActivity extends AppCompatActivity implements ResponceQueu
     }
 
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
     public void setAnimation(){
 
 //        a.reset();

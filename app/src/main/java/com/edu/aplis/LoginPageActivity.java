@@ -94,7 +94,7 @@ public class LoginPageActivity extends AppCompatActivity implements ResponceQueu
         progressBar = findViewById(R.id.progressBar);
         button1 =  findViewById(R.id.button1);
 
-        callanalytics();
+        //callanalytics();
 
         ed_passwordsignin.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
         ed_passwordsignin.addTextChangedListener(new TextWatcher() {
@@ -544,8 +544,8 @@ public class LoginPageActivity extends AppCompatActivity implements ResponceQueu
     }
 
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 }

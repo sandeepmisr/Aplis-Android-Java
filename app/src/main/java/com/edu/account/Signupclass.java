@@ -52,7 +52,7 @@ public class Signupclass extends AppCompatActivity implements ResponceQueues {
         TextView signup_btn = findViewById(R.id.signup_btn);
 
 
-        callanalytics();
+        //callanalytics();
         signup_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -181,10 +181,10 @@ public class Signupclass extends AppCompatActivity implements ResponceQueues {
         }
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
 

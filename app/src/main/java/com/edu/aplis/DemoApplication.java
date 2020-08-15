@@ -15,10 +15,7 @@ import com.google.android.exoplayer2.upstream.cache.CacheDataSourceFactory;
 import com.google.android.exoplayer2.upstream.cache.NoOpCacheEvictor;
 import com.google.android.exoplayer2.upstream.cache.SimpleCache;
 import com.google.android.exoplayer2.util.Util;
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.StandardExceptionParser;
-import com.google.android.gms.analytics.Tracker;
+
 import com.googleanalytics.AnalyticsTrackers;
 
 import java.io.File;
@@ -59,8 +56,8 @@ public class DemoApplication extends Application {
         userAgent = Util.getUserAgent(this, "ExoPlayerDemo");
         mInstance = this;
 
-        AnalyticsTrackers.initialize(this);
-        AnalyticsTrackers.getInstance().get(AnalyticsTrackers.Target.APP);
+/*        AnalyticsTrackers.initialize(this);
+        AnalyticsTrackers.getInstance().get(AnalyticsTrackers.Target.APP);*/
     }
 
     /**
@@ -111,12 +108,12 @@ public class DemoApplication extends Application {
         return mInstance;
     }
 
-    public synchronized Tracker getGoogleAnalyticsTracker() {
+/*    public synchronized Tracker getGoogleAnalyticsTracker() {
         AnalyticsTrackers analyticsTrackers = AnalyticsTrackers.getInstance();
         return analyticsTrackers.get(AnalyticsTrackers.Target.APP);
-    }
+    }*/
 
-    public void trackScreenView(String screenName) {
+/*    public void trackScreenView(String screenName) {
         Tracker t = getGoogleAnalyticsTracker();
 
         // Set screen name.
@@ -126,9 +123,9 @@ public class DemoApplication extends Application {
         t.send(new HitBuilders.ScreenViewBuilder().build());
 
         GoogleAnalytics.getInstance(this).dispatchLocalHits();
-    }
+    }*/
 
-    public void trackException(Exception e) {
+/*    public void trackException(Exception e) {
         if (e != null) {
             Tracker t = getGoogleAnalyticsTracker();
 
@@ -140,7 +137,7 @@ public class DemoApplication extends Application {
                     .build()
             );
         }
-    }
+    }*/
 
     /***
      * Tracking event
@@ -149,11 +146,11 @@ public class DemoApplication extends Application {
      * @param action   action of the event
      * @param label    label
      */
-    public void trackEvent(String category, String action, String label) {
+/*    public void trackEvent(String category, String action, String label) {
         Tracker t = getGoogleAnalyticsTracker();
 
         // Build and send an Event.
         t.send(new HitBuilders.EventBuilder().setCategory(category).setAction(action).setLabel(label).build());
-    }
+    }*/
 
 }

@@ -75,7 +75,7 @@ public class Barchartsub_subActivity extends AppCompatActivity implements Respon
         piesideimagebar = findViewById(R.id.piesideimagebar);
         piesidescrren = findViewById(R.id.piesidescrren);
         leftpielinear = findViewById(R.id.leftpielinear);
-    callanalytics();
+    //callanalytics();
 
         leftpielinear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -347,10 +347,10 @@ public class Barchartsub_subActivity extends AppCompatActivity implements Respon
         }
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
 

@@ -142,7 +142,7 @@ public class SearchResultActivity extends AppCompatActivity implements ResponceQ
         categoriesArrayList =new ArrayList<>();
         topResultsArrayList =new ArrayList<>();
 
-        callanalytics();
+        //callanalytics();
         edittext_search.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
         edittext_search.addTextChangedListener(new TextWatcher() {
             @Override
@@ -1079,9 +1079,9 @@ return list;
         }
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 }

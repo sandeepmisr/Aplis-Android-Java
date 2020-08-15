@@ -49,7 +49,7 @@ public class TermsConditions extends AppCompatActivity  {
          zoomLinearLayout = (ZoomLinearLayout) findViewById(R.id.zoom_linear_layout);
         layout_back =  findViewById(R.id.layout_back);
 
-        callanalytics();
+      //  callanalytics();
         zoomLinearLayout.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -160,10 +160,10 @@ public class TermsConditions extends AppCompatActivity  {
     protected void onRestart() {
         super.onRestart();
     }
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
 

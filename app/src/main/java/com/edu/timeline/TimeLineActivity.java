@@ -152,7 +152,7 @@ public class TimeLineActivity extends AppCompatActivity implements ResponceQueue
         recyclerViewvpager = findViewById(R.id.vp);
         pageIndicatorView = findViewById(R.id.pageIndicatorView);
 
-        callanalytics();
+        //callanalytics();
         timeLineModelArrayList = new ArrayList<>();
 
 
@@ -753,9 +753,9 @@ public class TimeLineActivity extends AppCompatActivity implements ResponceQueue
         }
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 }

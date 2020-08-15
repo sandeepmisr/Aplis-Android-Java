@@ -56,7 +56,7 @@ public class PiechartActivtiy extends AppCompatActivity implements ResponceQueue
         piemodelArrayList = new ArrayList<>();
         context =PiechartActivtiy.this;
 
-        callanalytics();
+       // callanalytics();
 //        pieChart.setHoleColor(R.color.TextColor);
 
         pieChart.setOnClickListener(new View.OnClickListener() {
@@ -309,8 +309,8 @@ public class PiechartActivtiy extends AppCompatActivity implements ResponceQueue
         finish();
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 }

@@ -1,6 +1,7 @@
 package com.edu.aplis;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -9,6 +10,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -43,6 +45,8 @@ import com.edu.tutorialviewpager.CustomPagerAdapter;
 import com.edu.webservice.ApiService;
 import com.edu.webservice.Cons;
 import com.edu.webservice.ResponceQueues;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.crashlytics.FirebaseCrashlytics;
 import com.google.gson.Gson;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
@@ -94,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements ResponceQueues, V
     Otppage otppage;
     VerifyOtppage verifyOtppage;
     ProgressBar progressBar;
+    private FirebaseCrashlytics firebaseCrashlytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +112,12 @@ public class MainActivity extends AppCompatActivity implements ResponceQueues, V
             startActivity(new Intent(context, HomeActivityNew.class));
             finish();
         }
+        FirebaseApp.initializeApp(getApplicationContext());
+        FirebaseCrashlytics.getInstance().setCrashlyticsCollectionEnabled(true);
+
+        firebaseCrashlytics = FirebaseCrashlytics.getInstance();
+        firebaseCrashlytics.setCustomKey("timestamp", System.currentTimeMillis());
+
         Log.e("TAG",PrefrenceUtils.readString(context,PrefrenceUtils.PREF_DEVIC_TOKEN,""));
 
         ed_fnamesignup = findViewById(R.id.ed_fnamesignup);
@@ -135,7 +146,7 @@ public class MainActivity extends AppCompatActivity implements ResponceQueues, V
         final ViewPager viewPager = findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
-        callanalytics();
+        //callanalytics();
 
 //        test.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -590,6 +601,7 @@ else{
         makeHttpCall(Cons.SIGNUP_URL);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (getCurrentFocus() != null) {
@@ -803,8 +815,8 @@ dosignin();
     }
 
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 }

@@ -93,7 +93,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
 
 // Obtain the shared Tracker instance.
-        callanalytics();
+        //callanalytics();
 
 
 
@@ -365,10 +365,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
 }

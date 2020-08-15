@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "534292305170",
-    "firebase_url": "https://aplis-mobile-app.firebaseio.com",
-    "project_id": "aplis-mobile-app",
-    "storage_bucket": "aplis-mobile-app.appspot.com"
+    "project_number": "415592043757",
+    "firebase_url": "https://aplis-38473.firebaseio.com",
+    "project_id": "aplis-38473",
+    "storage_bucket": "aplis-38473.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:534292305170:android:64ccac6144de934d88cfcb",
+        "mobilesdk_app_id": "1:415592043757:android:5650386091a4b7fc0be8e4",
         "android_client_info": {
           "package_name": "com.edu.aplis"
         }
       },
       "oauth_client": [
         {
-          "client_id": "534292305170-hsp6hadip8da63okvb6ofrkht6q4m7ro.apps.googleusercontent.com",
+          "client_id": "415592043757-6hmm7u57dc8d7msonle0tobb0bupldgl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBAd0zD4M0sb6Fkm0WOcpi8FcZWLLwXU8Y"
+          "current_key": "AIzaSyBG1TsAyOA7tiqJkdC3NF3QClwHNyl37yQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "534292305170-hsp6hadip8da63okvb6ofrkht6q4m7ro.apps.googleusercontent.com",
+              "client_id": "415592043757-6hmm7u57dc8d7msonle0tobb0bupldgl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

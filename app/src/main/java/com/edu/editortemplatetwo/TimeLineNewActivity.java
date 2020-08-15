@@ -177,7 +177,7 @@ public class TimeLineNewActivity extends AppCompatActivity implements ResponceQu
         layout_bg = findViewById(R.id.layout_bg);
         leftpanel = findViewById(R.id.leftpanel);
 
-        callanalytics();
+        //callanalytics();
 //        fabMenu.setVisibility(View.GONE);
         fabMenu.setMenuListener(new FABsMenuListener() {
 
@@ -899,9 +899,9 @@ if (timeLineModelArrayList.get(currentPos).getMime_type().equalsIgnoreCase("vide
         leftpanel.setVisibility(View.VISIBLE);
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 }

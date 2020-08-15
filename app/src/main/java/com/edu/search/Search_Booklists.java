@@ -60,7 +60,7 @@ public class Search_Booklists extends AppCompatActivity implements ResponceQueue
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
 
-        callanalytics();
+       // callanalytics();
         text_title.setText(getIntent().getStringExtra("title"));
         if(getIntent().getStringExtra("description").startsWith("Category")) {
             text_subtitle.setText(getIntent().getStringExtra("description").replace("Category",""));
@@ -142,10 +142,10 @@ public class Search_Booklists extends AppCompatActivity implements ResponceQueue
         finish();
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
 }

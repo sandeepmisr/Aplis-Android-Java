@@ -59,7 +59,7 @@ public class Verify_Activity extends AppCompatActivity implements
         verify = findViewById(R.id.text_reset);
         cancel_image = findViewById(R.id.cancel_image);
 
-        callanalytics();
+        //callanalytics();
         cancel_image.setOnClickListener(this);
         verify.setOnClickListener(this);
 
@@ -134,9 +134,9 @@ public class Verify_Activity extends AppCompatActivity implements
 
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 }

@@ -140,7 +140,7 @@ public class EditorSecondSubActivity extends AppCompatActivity implements Respon
 
         fabMenu = findViewById(R.id.fabs_menu);
 
-        callanalytics();
+        //callanalytics();
         fabMenu.setMenuListener(new FABsMenuListener() {
 
 
@@ -662,8 +662,8 @@ public class EditorSecondSubActivity extends AppCompatActivity implements Respon
         rec_view.setVisibility(View.VISIBLE);
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 }

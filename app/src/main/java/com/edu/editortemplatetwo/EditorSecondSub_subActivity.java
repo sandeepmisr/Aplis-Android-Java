@@ -178,7 +178,7 @@ public class EditorSecondSub_subActivity extends AppCompatActivity implements Re
         layout_bg = findViewById(R.id.layout_bg);
         leftpanel = findViewById(R.id.leftpanel);
 
-        callanalytics();
+      //  callanalytics();
 //        fabMenu.setVisibility(View.GONE);
         fabMenu.setMenuListener(new FABsMenuListener() {
 
@@ -1097,9 +1097,9 @@ else if(discoverModelArrayList.get(currentPos).getMime_type().equalsIgnoreCase("
         leftpanel.setVisibility(View.VISIBLE);
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 }

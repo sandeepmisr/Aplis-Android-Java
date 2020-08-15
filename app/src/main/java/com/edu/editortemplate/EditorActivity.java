@@ -721,10 +721,10 @@ public class EditorActivity extends AppCompatActivity implements ResponceQueues,
         super.onStart();
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 //    @Override
 //    public void onResume() {

@@ -169,7 +169,7 @@ public class EditorSecondSub_sub_subActivity extends AppCompatActivity implement
 
         playerListener =this;
 
-        callanalytics();
+        //callanalytics();
         editorModelArrayList= new ArrayList<>();
         sub_id = getIntent().getStringExtra("sub_sub_id_s");
         sub_name = getIntent().getStringExtra("subtitle_name");
@@ -948,9 +948,9 @@ public class EditorSecondSub_sub_subActivity extends AppCompatActivity implement
     }
 
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 }

@@ -144,7 +144,7 @@ public class CourseDetail extends AppCompatActivity implements View.OnClickListe
         recyclerView.setLayoutManager(new GridLayoutManager(this, 4));
         serieslist = new ArrayList<>();
 
-        callanalytics();
+       // callanalytics();
 
         Log.e("data", "clikedbhbin:" + sub_name);
 
@@ -739,10 +739,10 @@ public class CourseDetail extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
 }

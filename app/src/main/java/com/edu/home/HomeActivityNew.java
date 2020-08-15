@@ -128,7 +128,7 @@ public class HomeActivityNew extends AppCompatActivity implements View.OnClickLi
 //        nav_view.bringToFront();
         client = new GoogleApiClient.Builder(context).addApi(AppIndex.API).build();
 
-        callanalytics();
+        //callanalytics();
 
 //        imageview_settings.setOnClickListener(this);
 //        imageview_slider.setOnClickListener(this);
@@ -377,10 +377,10 @@ public class HomeActivityNew extends AppCompatActivity implements View.OnClickLi
 //
 //    }
 
-    private void callanalytics() {
+ /*   private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
     public void openFragment(Fragment fragment) {

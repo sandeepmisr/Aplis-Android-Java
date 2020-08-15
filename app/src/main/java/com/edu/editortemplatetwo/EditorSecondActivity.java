@@ -164,7 +164,7 @@ public class EditorSecondActivity extends AppCompatActivity implements ResponceQ
                 false);
         rec_view.setLayoutManager(linearLayoutManager);
 
-        callanalytics();
+        //callanalytics();
 
 //        String html = "<html><style type=\"text/css\"> @font-face {font-family: MyFont;src: url('file:///android_asset/fonts/playfairdisplayregular.ttf'); font-weight: normal; font-style: normal} @font-face {font-family: MyFontBOLD;src: url('file:///android_asset/fonts/playfairdisplaybold.ttf'); font-weight: bold; font-style: normal} @font-face {font-family: MyFontITALIC;src: url('file:///android_asset/fonts/playfairdisplayitalic.ttf'); font-weight: normal; font-style: italic}"+
 //                "h1{\n" +
@@ -713,10 +713,10 @@ public class EditorSecondActivity extends AppCompatActivity implements ResponceQ
     }
 
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 //    @Override
 //    public void onResume() {
 //        super.onResume();

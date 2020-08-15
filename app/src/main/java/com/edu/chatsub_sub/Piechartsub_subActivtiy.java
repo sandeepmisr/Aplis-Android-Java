@@ -171,7 +171,7 @@ public class Piechartsub_subActivtiy extends AppCompatActivity implements Respon
         layout_bg = findViewById(R.id.layout_bg);
 
 
-        callanalytics();
+        //callanalytics();
         leftpielinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -875,8 +875,8 @@ public class Piechartsub_subActivtiy extends AppCompatActivity implements Respon
         linear_table.setVisibility(View.VISIBLE);
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 }

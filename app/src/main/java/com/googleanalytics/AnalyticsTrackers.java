@@ -3,8 +3,7 @@ package com.googleanalytics;
 import android.content.Context;
 
 import com.edu.aplis.R;
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.Tracker;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +32,7 @@ public class AnalyticsTrackers {
         return sInstance;
     }
 
-    private final Map<Target, Tracker> mTrackers = new HashMap<Target, Tracker>();
+   // private final Map<Target, Tracker> mTrackers = new HashMap<Target, Tracker>();
     private final Context mContext;
 
     /**
@@ -43,7 +42,7 @@ public class AnalyticsTrackers {
         mContext = context.getApplicationContext();
     }
 
-    public synchronized Tracker get(Target target) {
+/*    public synchronized Tracker get(Target target) {
         if (!mTrackers.containsKey(target)) {
             Tracker tracker;
             switch (target) {
@@ -57,7 +56,7 @@ public class AnalyticsTrackers {
         }
 
         return mTrackers.get(target);
-    }
+    }*/
 
 
 

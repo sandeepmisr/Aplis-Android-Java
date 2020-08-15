@@ -58,7 +58,7 @@ public class Search_SubCatlists extends AppCompatActivity implements ResponceQue
         booksserieslist = new ArrayList<>();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(linearLayoutManager);
-        callanalytics();
+        //callanalytics();
 //        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
 
@@ -81,10 +81,10 @@ public class Search_SubCatlists extends AppCompatActivity implements ResponceQue
         apiService.execute();
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
     @Override
     public void responceQue(String responce, String url, String extra_text) {

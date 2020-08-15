@@ -124,7 +124,7 @@ public class BarchartActivitynew extends AppCompatActivity implements ResponceQu
         piesidescrren = findViewById(R.id.piesidescrren);
         leftpielinear = findViewById(R.id.leftpielinear);
 
-        callanalytics();
+        //callanalytics();
         leftpielinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -974,10 +974,10 @@ public class BarchartActivitynew extends AppCompatActivity implements ResponceQu
 
 
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 //    @Override
 //    public void onValueSelected(Entry e, Highlight h) {

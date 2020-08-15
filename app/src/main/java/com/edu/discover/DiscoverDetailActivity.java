@@ -216,7 +216,7 @@ public class DiscoverDetailActivity extends Activity implements View.OnClickList
             clearStartPosition();
         }
 
-        callanalytics();
+        //callanalytics();
 
         view = findViewById(R.id.view);
         tittle = findViewById(R.id.tittle);
@@ -1103,10 +1103,10 @@ public class DiscoverDetailActivity extends Activity implements View.OnClickList
 
 
     }
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 
 
 }

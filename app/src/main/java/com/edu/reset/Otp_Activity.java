@@ -71,7 +71,7 @@ public class Otp_Activity extends AppCompatActivity implements
         ed_cpswd = findViewById(R.id.ed_cpswd);
         verify = findViewById(R.id.text_reset);
 
-        callanalytics();
+      //  callanalytics();
         verify.setOnClickListener(this);
 
 //        makeOTPcall(otp);
@@ -141,8 +141,8 @@ public class Otp_Activity extends AppCompatActivity implements
         });
     }
 
-    private void callanalytics() {
+/*    private void callanalytics() {
         DemoApplication application = (DemoApplication) getApplication();
         application.trackScreenView(getClass().getSimpleName());
-    }
+    }*/
 }
